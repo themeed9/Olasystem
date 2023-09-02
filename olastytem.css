@@ -6,6 +6,10 @@
     box-sizing: border-box;
     font-family:'Poppins', sans-serif,'Sora';
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
 .first-contact {
     width: 100%;
     height: auto;
@@ -117,18 +121,22 @@
     width: fit-content;
     height:auto;
 }
+a.link{
+    width: fit-content;
+    height: auto;
+}
 .link {
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Sora';
-    line-height: 3rem;
+    /* line-height: 3rem; */
     text-align: justify;
     text-decoration: none;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: fit-content;
     height: auto;
 }
 .link:hover {
@@ -138,15 +146,31 @@
     line-height: 3rem;
     text-align: justify;
     text-decoration: none;
-    color: white;
+    color: #FBBE3E;
     opacity: 0.8;
-    width: 100%;
+    width: fit-content;
     height: auto;
+}
+.link-container a:focus{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Sora';
+    line-height: 3rem;
+    text-align: justify;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    color: #FBBE3E;
+    
 }
 .hero-section {
     width: 100%;
     height:auto;
-    background-image: url("./Images/bgphoto.jpg");
+    background-image: url("./images/bgphoto.jpg");
+    object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -175,8 +199,8 @@
     justify-content: center;
     position: absolute;
     z-index: 2;
-    right: 55rem;
-    bottom: 10rem;
+    right: 60rem;
+    top: 8rem;
     padding: 1rem;
 }
 .logo-box img {
@@ -195,7 +219,7 @@
     border-radius: 100%;
     z-index: 3;
     position: absolute;
-    top: 37rem;
+    top: 46.5rem;
 }
 .scroll-arrow img {
     width: 80%;
@@ -306,7 +330,7 @@
     background-color: #0C056D;
     width: fit-content;
     height: auto;
-    padding: 4rem 1rem;
+    padding: 4rem 1.8rem;
 }
 .service-box .blue img {
     width: 100%;
@@ -314,4 +338,99 @@
 }
 .service-box .blue {
     background-color: #0C056D;
+}
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 7rem 6.25rem;
+    row-gap: 1.5rem ;
+}
+.contacts{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 2rem;
+}
+.contact-box {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+.contact-section h2 {
+    font-family: 'Sora';
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #0C056D;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+    margin-top: 1rem;
+}
+.contacts .icondiv {
+    background: linear-gradient(90deg,#0C056D,#fbbe3e);
+    border-radius: 100%;
+    width: fit-content;
+    height: auto;
+    padding: .3rem;
+}
+.map-box {
+    width: 40%;
+    height: auto;
+}
+.map-box .map-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px 0px #0000001A;
+    ;
+}
+.map-image img {
+    width: 100%;
+    height: auto;
+}
+.header-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 3rem;
+}
+.location2, .mail2, .phone2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2.5rem;
+}
+.logo-copy {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #0C056D;
+    padding: 1rem 6.25rem;
+}
+.logo-copy h6 {
+    color: white;
 }
